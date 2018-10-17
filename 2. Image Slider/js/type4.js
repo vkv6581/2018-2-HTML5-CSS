@@ -1,6 +1,6 @@
 $(document).ready(function() {
   /* Control Panel */
-  $(window).resize(() => {
+  $(window).resize(() => {    //window란 웹 브라우저를 말함, window의 크기가 변경될때마다 불리는 함수인듯.
     resizePanelPosition();
   });
 
@@ -47,7 +47,7 @@ $(document).ready(function() {
       .siblings()
       .last()
       .fadeIn(1000);
-    $("#slider ul .item:last").prependTo("#slider ul");
+    $("#slider ul .item:last").prependTo("#slider ul"); //append -> 뒤에다 붙이는거, prepend -> 앞에다 붙이는거.
   }
 
   $("#slider .control a").hover(
