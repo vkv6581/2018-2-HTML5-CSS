@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans+KR');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Basic Tag Elements */
+html, body, a, h1, h2, h3, h4, h5, h6, p, input, label, textarea {
+    margin: 0;
+    padding: 0;
+    color: #333333;  
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+label {
+    display: block;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.075em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+input, textarea {
+    background: transparent; /* 배경을 투명하게 */
+    color: #333333;
+    border: solid 2px #e2e2e2;
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+input {
+    height: 3rem;
+}
+
+textarea {
+    height: 10rem;
+}
+/* General Styles */ 
+.btn {
+    border: solid 4px #333333;
+    background: rgba(33,33,33,0);
+    font-weight: 900;
+    color: #333333;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+.btn:hover {
+    background: rgba(33,33,33,1);
+    color: #ffffff;
+}
+
+/* Contents Elements */
+#wrapper .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    background-color: #333333;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+    z-index: -1;
+    opacity: .7;
+}
+
+#header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5rem 3rem;
+}
+#header .logo {
+    color: #ffffff;
+    font-family: 'Nanum Myeongjo', serif !important;
+}
+
+#nav {
+    display: flex;
+    height: 4rem; /* HTML에 대한 상대적 크기 */
+    line-height: 4rem;
+    position: relative;
+    z-index: 10;
+    max-width: 70rem;
+    margin: 0 auto;
+    background-color: rgba(33,33,33,.7);
+    color: #ffffff;
+}
+#nav .menus {
+    display: flex;  /* flexable하게 레이아웃 구성하게 해 주는 설정 반응형 웹 */
+    flex-grow: 1;    
+}
+#nav .menus li a {  
+    display: block;
+    padding: 0 2rem;
+    color: #ffffff;
+    transition: all .2s ease-in-out; /* nav에 마우스 갓다대면 애니메이션 효과 매개변수 {어떤 속성, 지속 시간, 바뀌는 굴곡?} */
+}
+#nav .menus li a:hover {
+    background-color: rgba(255,255,255,.4);
+}
+#nav .menus li.active a {
+    background-color: #ffffff;
+    color: #333333;
+}
+#nav .icons {
+    display: flex;
+    flex-grow: 0;
+    flex-direction: row-reverse;
+}
+#nav .icons li a {
+    display: block;
+    padding: 0 2rem;
+    color: #ffffff;
+}
+
+#main {
+    clear: both;
+    max-width: 70rem;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffffff;
+}
+
+#main .featured {
+    padding: 4rem;
+}
+
+#main .featured header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#main .featured header h2 {
+    margin-bottom: 3rem;
+}
+#main .posts {
+    display: flex;
+    flex-flow: wrap;
+}
+#main .posts .post {
+    flex: 1 50%;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+#main .posts .post:nth-of-type(odd) {
+    padding-left: 4rem;
+}
+#main .posts .post:nth-of-type(even) {
+    padding-right: 4rem;
+}
+#main .posts .post a img {
+    height: 200px;
+    object-fit: cover;
+}
+#main .more {
+    position: relative;
+    margin: 4rem 4rem 0 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+#footer {
+    max-width: 70rem;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    display: flex;
+}
+#footer .contact, #footer .info {
+    flex: 1;
+    padding: 4rem;
+}
+#footer .inputs .submit {
+    width: initial;
+    height: initial;
+}
+#footer .info section {
+    display: flex;
+    margin-bottom: 2rem;
+}
+#footer .info h3 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 10rem;
+    color: #333333;
+    line-height: 3rem;
+}
+#footer .info p {
+    flex-grow: 1;
+    flex-shrink: 1;
+    line-height: 3rem;
+}
+#copyright {
+    max-width: 70rem;
+    margin: 0 auto;
+    background-color: #333333;
+}
+#copyright p {
+    padding: 2rem;
+    text-align: center;
+    color: #AAAAAA;
+}
+#copyright p a {
+    color: #aaaaaa;
+}
+
+
+@media screen and (max-width: 1280x) {  /* 미디어코드, 반응형 레이아웃을 구성하기 위한 가장 핵심적인 코드들 */
+    /* 가로 크기가 1280이하일 경우에는 이 코드를 적용시켜라 */
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
