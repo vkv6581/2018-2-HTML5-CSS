@@ -1,7 +1,13 @@
-$(document).ready(function () {
+$(document).ready(function () { //모든 파일들이 다 로딩된 후 Jquery가 실행된다는 것.
     // 모든 이미지 아이템을 선택
     $imgItems = $("#slider ul .item");
     
+    /* 변수의 선언
+        let = 변수 
+        const = 상수
+        var = 이제 안씀
+    */
+
     // 시작할 때의 index 
     let currentIndex = 1;
     // 이미지 아이템의 개수
