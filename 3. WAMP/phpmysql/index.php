@@ -1,5 +1,5 @@
 <?php
-require './dbconfig.php';
+require './dbconfig.php';   //php에서 데이터 불러올 때 사용
 
 $sql = "SELECT * FROM user";
 $result = mysqli_query($conn, $sql);
