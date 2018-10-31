@@ -1,0 +1,95 @@
+/* ul의 margin과 padding0설정 */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* ul태그 밑 li태그 스타일 none설정 */
+ul li {
+    list-style: none;
+}
+
+/*id first를 가진 ul태그에 오른쪽설정 */
+#first ul {
+    float: right;
+}
+
+/*first id의 ul li를 가로로 나열하기 */
+#first ul li {
+    display : inline-block; /*element가 차지할 만큼만 영역을 차지한다. */
+    padding: 0 5px; /* 여백 조정을 통해 각각 콘텐츠가 균일하게 표시 위 아리 왼 오 순서 2개이면 위아래/왼오른 이렇게 분리됨 */
+    /* width: 50px;
+    text-align: center; 가운데정렬 */
+}
+
+/* li태그 뒤에 클래스를 입력할 때는 붙여서 사용한다 */
+/* li태그 밑에 label이 붙은 것만 속성을 지정해 달라는 의미 */
+#first ul li.label {
+    width: 10px;
+    height: 20px;
+    /* 구분선인 border를 둥그렇게 만들어주는 것 */
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+#first ul li.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+#second {
+    padding-top: 150px;
+    text-align: center;
+}
+
+#third {
+    /* 부모는 relative로 지정하고 자식이 absolute라도 자기 밖으로 빠져나가지 못함 */
+    position: relative;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#third input {
+    width: 500px;
+    height: 30px;
+    margin-top: 30px;
+    /* border는 3개의 값을 연속적으로 입력받음, 선의 굵기, 선의 모양, 선의 색상 순서는 상관없다*/
+    border: #ccc 1px solid;
+    border-bottom: #999 solid 1px;
+    /* box shadow, 그림자 속성, 3가지 속성 입력받음, 가로, 세로의 이동값, 색 */
+    box-shadow: 0 1px #aaa;
+}
+
+#third ul{
+    /* 나 혼자 다 무시하고 절대적 위치를 갖겠다 부모가 relative이기 때문에 부모를 기준으로 위치를 가짐 */
+    position: absolute;
+    top: 36px;
+    right: 10px;
+}
+
+#third ul li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+#fourth {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#fourth button {
+    border: 0;
+    background-color: #ddd;
+    color: #666;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 3px;
+}
+
+#fifth {
+    position: fixed;
+    bottom: 0;
+}
