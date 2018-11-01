@@ -87,4 +87,14 @@ ul li {
     color:  rgb(15,201,56);
     /* text-decoration: underline; */
     border-bottom: rgb(15,201,56) 1.8px solid;
+    /* boder 모양 종류
+    solid = 실선
+    doted = 점선
+    double = 이중선 */
 }
+
+
+/* third ul li태그 밑에 제일 마지막에 있는 것만 스타일을 지정하겠다는 코드.
+#third ul li:last-of-type {
+
+} */
