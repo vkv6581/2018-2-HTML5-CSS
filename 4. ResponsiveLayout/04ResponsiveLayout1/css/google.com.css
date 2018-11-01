@@ -92,4 +92,37 @@ ul li {
 #fifth {
     position: fixed;
     bottom: 0;
+    color: darkslategray;
+    width: 100%;
+    background-color: #ddd;
+}
+
+#fifth div{
+    border-bottom: #aaa 1px solid;
+}
+
+#fifth div p{
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+#fifth ul {
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#fifth ul li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+#fifth ul.bottomNavRight {
+    /* display: inline-block; */
+    float: right;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 10px;
 }

@@ -1,0 +1,90 @@
+/* ul의 margin과 padding0설정 */
+ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* ul태그 밑 li태그 스타일 none설정 */
+ul li {
+    list-style: none;
+}
+
+#first, #second {
+    background-color: rgb(15,201,56);
+}
+
+#first {
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+#first p{
+    /* 컨텐츠가 차지하는 영역만큼만 가로세로 크기 가짐 */
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+#first p i{ 
+    color: white;
+}
+
+#first img{
+    height: 30px;
+}
+
+#second {
+    padding: 0 15px 15px 15px;
+    position: relative;
+}
+
+#second input{
+    width: 100%;
+    /* em은 기존값의 배수만큼이다. */
+    height: 2em;
+}
+
+#second ul {
+    position: absolute;
+    top: 3px;
+    right: 15px;
+}
+
+#second ul li{
+    /* display: inline-block; */
+    /* 가로로 딱 붙이기 */
+    float: left;
+    padding: 0 8px;
+    font-size: 1.2em;
+    color:  rgb(15,201,56);
+}
+
+#third {
+
+}
+
+#third ul {
+    display: flex;
+}
+
+/* 부모 객체가 display flex로 되어 있을 때 자식에서 정렬할 때 가로 크기를 기준으로 li크기들이 차지하는 넓이의 비율을 같게 하겠다 */
+#third ul li {
+    flex: 3;
+    text-align: center;
+    font-size: .8em;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+#third ul li#plusIcon {
+    flex: 1;
+    border-left: #ddd .2px solid;
+}
+
+#third ul li.active {
+    color:  rgb(15,201,56);
+    /* text-decoration: underline; */
+    border-bottom: rgb(15,201,56) 1.8px solid;
+}
