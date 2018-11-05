@@ -1,0 +1,121 @@
+/* a 기본 태그 설정 */
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#wrapper {
+    max-width: 450px;
+    /* auto로 하면 브라우저 가로 크기에 자동으로 맞춰준다 가운데로 */
+    margin: 150px auto;
+    height: 100vh;
+}
+
+.login_area {
+    border: solid 1px #ececec;
+    border-radius: 10px;
+    /* 최대의 가로 크기 450으로 제한 wrapper 가능 */
+    /* max-width: 450px; */
+    padding: 45px 35px 70px 35px;
+    box-shadow: 0 1.5px #aaa;
+}
+
+.login_area header {
+    /* 가운데 정렬 */
+    text-align: center;
+}
+
+.login_area header img {
+    width: 100px;
+}
+
+.login_area header h2 {
+    /* 굵게 표시하지 않음 */
+    font-weight: normal;
+}
+
+.login_area section input {
+    /* input의 부모 태그인 section의 100%만큼으로 쭉 넓어짐 */
+    width: 100%;
+    /* 기존의 1.5배 */
+    font-size: 1.5em;
+    /* 구분선 삭제 */
+    border: none;
+    border-bottom: 1.5px #eee solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* .login_area section a {
+    padding-top: 30px;
+} */
+
+.login_area section p {
+    padding-top: 40px;
+}
+
+.login_area footer {
+    padding-top: 20px;
+}
+
+/* 다음 버튼 만들기 */
+.login_area footer a.btn {
+    background-color: rgb(26, 115, 232);
+    color: #fff;
+    padding: 6.5px 27px;
+    border-radius: 3px;
+    /* a태그의 inline속성을 블럭으로 변경 */
+    /* display: block; */
+    float: right;
+}
+
+#footer {
+    /* wrapper 가능
+    max-width: 450px; */
+
+    /* 자식들을 flex하게 부여하기 위해 */
+    display: flex;
+    margin-top: 20px;
+} 
+
+#footer .left {
+    flex: 1;
+}
+
+#footer .right {
+    flex: 2;
+}
+
+#footer .left select {
+    border: none;
+    font-size: .7em;
+}
+
+#footer .right ul {
+    display: flex;
+}
+
+#footer .right ul li {
+    flex: 1;
+    text-align: right;
+}
+
+#footer .right ul li{
+    flex: 1;
+    text-align: right;
+}
+
+#footer .right ul li:first-of-type {
+    flex: 1;
+    text-align: center;
+}
+
+#footer .right ul li a {
+    font-size: .7em;
+    color: gray;
+}
