@@ -1,0 +1,192 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+#gnb .top {
+    border-bottom: solid 1px #ddd;
+    text-align: right;
+}
+#gnb .top ul li {
+    display: inline-block;
+    padding: 5px;
+    border-left: solid 1px #ddd;
+}
+#gnb .top ul li:last-of-type {
+    border-right: solid 1px #ddd;
+}
+#gnb .bottom {
+    display: flex;
+    border-bottom: solid 3px navy;
+}
+#gnb .bottom div {
+    flex: 1;
+}
+#gnb .bottom .logo_area img {
+    width: 100px;
+}
+#gnb .bottom .menu_area ul {
+    display: flex;
+}
+#gnb .bottom .menu_area ul li {
+    flex: 1;
+    text-align: center;
+    padding: 20px 0;
+}
+/* 마우스오버이벤트 css로 하기 */
+#gnb .bottom .menu_area ul li:hover {
+    background-color: navy;
+}
+/* li에 마우스오버되었을때의 밑의 a태그 */
+#gnb .bottom .menu_area ul li:hover a{
+    color: white;
+}
+#main_image img{
+    width: 100%;
+    height: 300px;
+}
+#link_banner ul {
+    display: flex;
+}
+#link_banner ul li {
+    flex: 1;
+    border-top: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    background-color: white;
+    padding: 10px;
+}
+#contents{
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: -30px;
+}
+#link_banner ul li:hover {
+    background-color: navy;
+    color: white;
+}
+/* 마지막 elements에는 오른쪽 벽도 막게 */
+#link_banner ul li:last-of-type {
+    border-right: solid 1px #ccc;
+}
+#link_banner ul li i{
+    font-size: 2.5em;
+    float: left;
+}
+#link_banner ul li h4{
+    float: left;
+}
+#link_banner ul li p{
+    float: left;
+}
+#recent_board{
+    display: flex;
+}
+#recent_board .board_area{
+    flex: 1;
+}
+#recent_board .board_area .title {
+    font-weight: bold;
+    border-bottom: solid 3px #666;
+}
+#recent_board .board_area .title i{
+    float: right;
+}
+#recent_board .board_area ul{
+    list-style: disc;
+    /* 왼쪽 영역에 점이 찍히기 때문에 padding 다시 넣어줘야 한다 */
+    padding-left: 25px;
+}
+#recent_board .board_area ul li span {
+    float: right;
+}
+#bottom_link_banner ul {
+    display: flex;
+}
+#bottom_link_banner ul li {
+    flex: 1;
+}
+#bottom_link_banner ul li img{
+    width: 50px;
+}
+#bottom_link_banner ul li.career i{
+    float: left;
+    font-size: 3.5em;
+}
+#bottom_link_banner ul li.career .title{
+    float: left;
+    font-size: 20px;
+}
+#bottom_link_banner ul li.career .sub_title {
+    float: left;
+    font-size: 12px;
+}
+#bottom_link_banner ul li.champion .title {
+    font-size: 20px;
+}
+#bottom_link_banner ul li.champion .sub_title {
+    font-size: 12px;
+}
+#bottom_link_banner ul li.champion i {
+    float: right;
+}
+#bottom_link_banner ul li.pass img {
+    float: left;
+    width: 50px;
+}
+#bottom_link_banner ul li.pass .title {
+    float: left;
+    font-size: 20px;
+}
+#bottom_link_banner ul li.pass .sub_title {
+    float: left;
+    font-size: 12px;
+}
+#footer div:first-of-type {
+    position: relative;
+}
+#footer div ul {
+    text-align: center;
+}
+#footer div ul li{
+    border: solid 1px #ccc;
+    text-align: center;
+    width: 110px;
+    display: inline-block;
+}
+#footer div ul li img {
+    width: 80px;
+    float: left;
+}
+#footer div span {
+    position: absolute;
+    top: 0;
+}
+#footer div span.left {
+    left: 0;
+}
+#footer div span.right {
+    right: 0;
+}
+#footer .bottom {
+    display: flex;
+}
+#footer .bottom div {
+    flex: 1;
+}
+#footer .bottom div:nth-last-child(1) {
+    text-align: right;    
+}
+#footer .bottom div img {
+    width: 100px;
+}
